@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flora Hervas do Mato | Gastronomia de Autor &amp; Herbalismo</title>
+<meta content="Experiência gastronômica única unindo a sofisticação da culinária gourmet com a tradição das ervas do mato." name="description"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: EB Garamond (Display/Headlines) & Manrope (Body/UI) -->
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Schema.org for LocalBusiness -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Flora Hervas do Mato",
+      "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de",
+      "@id": "https://florahervasdomato.com.br",
+      "url": "https://florahervasdomato.com.br",
+      "telephone": "+552127716109",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua das Ervas, 123",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "20000-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -22.9068,
+        "longitude": -43.1729
+      },
+      "servesCuisine": "Gastronomia Autoral, Herbalismo",
+      "priceRange": "$$$"
+    }
+    </script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#ffb783",
+                    "primary-container": "#c0392b",
+                    "tertiary-fixed": "#c0e8ff",
+                    "outline": "#a88a85",
+                    "primary-fixed-dim": "#ffb4a9",
+                    "on-surface": "#f7ddd9",
+                    "tertiary-fixed-dim": "#80d0f8",
+                    "surface-container-low": "#261816",
+                    "surface": "#1d100e",
+                    "on-error": "#690005",
+                    "error": "#ffb4ab",
+                    "on-background": "#f7ddd9",
+                    "on-tertiary": "#003548",
+                    "tertiary": "#80d0f8",
+                    "inverse-on-surface": "#3c2d2a",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#ffb783",
+                    "on-tertiary-fixed-variant": "#004d66",
+                    "surface-container": "#2a1c1a",
+                    "on-primary": "#690001",
+                    "primary": "#ffb4a9",
+                    "surface-container-highest": "#41312f",
+                    "surface-container-lowest": "#170b09",
+                    "secondary-fixed": "#ffdcc5",
+                    "on-secondary": "#4f2500",
+                    "surface-bright": "#463533",
+                    "surface-variant": "#41312f",
+                    "on-secondary-fixed": "#301400",
+                    "background": "#1d100e",
+                    "error-container": "#93000a",
+                    "on-tertiary-fixed": "#001e2b",
+                    "surface-dim": "#1d100e",
+                    "outline-variant": "#59413d",
+                    "secondary-container": "#db7619",
+                    "primary-fixed": "#ffdad5",
+                    "on-primary-fixed": "#410000",
+                    "inverse-primary": "#b02d21",
+                    "on-secondary-fixed-variant": "#713700",
+                    "surface-container-high": "#352624",
+                    "tertiary-container": "#007296",
+                    "surface-tint": "#ffb4a9",
+                    "on-primary-fixed-variant": "#8e130c",
+                    "on-primary-container": "#ffe5e1",
+                    "on-secondary-container": "#451f00",
+                    "inverse-surface": "#f7ddd9",
+                    "on-tertiary-container": "#d3eeff",
+                    "on-surface-variant": "#e1bfb9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "section-gap": "120px",
+                    "unit": "8px",
+                    "stack-lg": "48px",
+                    "gutter": "24px",
+                    "container-max": "1200px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "display-lg-mobile": ["EB Garamond"],
+                    "headline-sm": ["EB Garamond"],
+                    "headline-md": ["EB Garamond"],
+                    "display-lg": ["EB Garamond"],
+                    "button-text": ["Manrope"],
+                    "label-caps": ["Manrope"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "button-text": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #1d100e; /* surface from config */
+            color: #f7ddd9; /* on-surface from config */
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .line-leader {
+            flex-grow: 1;
+            border-bottom: 1px dotted rgba(247, 221, 217, 0.3);
+            margin: 0 8px;
+            margin-bottom: 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 border-b border-on-background/10 backdrop-blur-md bg-surface/90">
+<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="spa">spa</span>
+<span class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed tracking-tight">Flora Hervas do Mato</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#menu">Cardápio</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#galeria">Experiência</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md" href="#sobre">Nossa Essência</a>
+<a class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-button-text flex items-center gap-2 hover:bg-secondary-container transition-all active:scale-95" href="https://wa.me/552127716109">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+                    WhatsApp
+                </a>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[795px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A high-end editorial food photograph of a gourmet dish featuring edible flowers and wild herbs, served on a dark artisanal ceramic plate. The lighting is warm and dramatic, creating deep shadows and highlighting the vibrant colors of the ingredients. The background is a dark, rustic wooden table in a high-friction-less luxury restaurant setting with deep wine red and earthy brown tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZCR1FHiiFN-DK_9G97U6S1JEIgz6TdNCGqaKMJdF7pJs8G4sls-IxbCVP88mLlctTrR-fZFSiuS77DT5H8Jww61cqjR9eALcueIKQErHFKqaMOMnL9KKb_8yAUye_0NE00y9J_dNGEPLsFz56QP-7scmfXu7Bs01bPzzVz444DBEWFVyn8WDXk5iVoMfYOQqGiYuZtqLD-Nmhe59NeOeZaPsqWPoHzC0XhdKbMcPKeQ1pNil1bUGx9P50d7JbzGX3SD2YCa7jN6np"/>
+</div>
+<div class="relative z-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-none">A Alquimia entre o Mato e a <span class="text-primary-container">Alta Gastronomia.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-lg">
+                        Descubra o luxo do herbalismo autoral. Ingredientes selecionados à mão para criar momentos que despertam os sentidos.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="h-[56px] px-10 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center gap-3 font-button-text hover:bg-secondary-container transition-all shadow-lg shadow-primary-container/20" href="https://wa.me/552127716109">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+                            RESERVAR AGORA
+                        </a>
+<a class="h-[56px] px-10 border border-outline/30 text-on-surface rounded-full flex items-center justify-center gap-3 font-button-text hover:bg-surface-container transition-all" href="#menu">
+                            VER CARDÁPIO
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Galeria Editorial (Bento Grid Style) -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto" id="galeria">
+<div class="text-center mb-stack-lg">
+<span class="font-label-caps text-label-caps text-secondary mb-2 block">EDITORIAL</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg">Visual e Sabor em Harmonia</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-[1000px] md:h-[700px]">
+<div class="md:col-span-8 relative group overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a chef's hands delicately placing a rare medicinal herb atop a perfectly seared scallops dish. Warm, golden hour light filters through, highlighting the steam and textures. The aesthetic is clean, minimalist, and editorial, typical of a high-end culinary magazine with rich textures and dark brown background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP_h8-mvHKa6kf0Pl3jgQ-uAko4P_jVY_ENc34N35AFCPUULOy5rH7wTQLoI1pl4b3kmzUwWZpT2GLjVNReKwCLtrXI69E7RN_o0j4-IC2FkYi8azj0LGEpony2-ZDm8g_ucU4KybkNuQ0Kn3ydlJVTSt52-55rMdFRwZ7-6PQKtDexFUVTmopXZLbEkP56V3fXWDphym47jwqs57j2hFO0FblV_pz_aOEz8eqbIQSC5_TiedEjn8mF-j7Q1kiulLua7hlj859bR7V"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex items-end p-stack-md opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="font-body-md italic">O detalhe que transforma o paladar.</p>
+</div>
+</div>
+<div class="md:col-span-4 relative group overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A beautifully set table for two in a dim, intimate setting. Crystal glasses, linen napkins, and artisanal candles reflect a warm glow. The atmosphere is sophisticated and quiet, focusing on the luxury of simplicity and the rich wine red accents of the décor. Elegant and premium hospitality photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzKGTkXZRu_h08_GiVX7825VnjUeDTcFvlNrBQ5L7cfE6dU5MlJPSQ95hskEZwFxn59t9mmwivzgUA-2xL5kShj8CFva6nen1fk2s7VRXOCavOlksB2WQLREEOprZ3nwq5thS5Nq_vWMFDTv1I22r-4Kh5l3nThkDzzDF3G808QW8LY-1Sa3xoP0Ex1KRWyWUoOwv7TsdIOzOVZw7Ljij-IvWgfp9_HkRU2OkzjQCxLfUEl2ksrDmxHEh69WVdI6zP5iRUhW_dASOh"/>
+</div>
+<div class="md:col-span-4 relative group overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Freshly harvested wild herbs like rosemary, thyme, and lavender arranged on a dark stone surface. Droplets of water glisten on the green leaves under a focused spotlight. The scene is earthy, organic, and deeply grounded in the tradition of herbalism, with high-contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVqzlaSNjc9H4lzmSbiettazHKD7uPNRF_Tt82q9rcosDYIf4Dox5_ocL8hYwutWK--3SdENoEqfDHqJtLS7Bf8UI0RU78ag9qgS4jZ8O815R_ryvYdHhdDBHKurKYZQArj9eSzzO0Gvb6AJoN1oFwWaH87QvKQX05jG01tgxNxq2Nlz5_Ve1hsFBjV_IRpWVFsMwNCnmMfZqDNddYV4Q5RakBnvHpZRx3vc-RTR8AixTkcNn54sHxEGDt5EG7m87yzxywi_q0zokW"/>
+</div>
+<div class="md:col-span-8 relative group overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A macro shot of a vibrant red herbal infusion being poured into a delicate glass cup. The liquid is translucent and rich in color, catching the light perfectly. The background is dark and blurred, emphasizing the purity and elegance of the drink. Gastronomy meets herbal wellness in a luxurious presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgATrJVdBDQkRTK3AF6mYV2gHpJ9eipVdtXF2S2u8DsVAztiYhDvfqLPWypyzT_kb3zhhJp_dZreljsBHZgS5SCtgT146icoXW-ozpmRI41Sm6vFE928P_XuhgDtEOlhguPG-SwSdgaNICK-p_98ojN_IEQeFfgWzHCJxJNyyUlzj4yiW5MDJ6MKoYMlDmiUbQLTwVZLeUeWp5Cz9vQ1_bllwtHT_pbQ6ux1N3kn7R7UyPSCr6-p1hwaNCAEt29gg3KsJ8gHRdK2Ss"/>
+</div>
+</div>
+</section>
+<!-- Benefícios / Destaques -->
+<section class="bg-surface-container-lowest py-section-gap" id="sobre">
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div>
+<span class="font-label-caps text-label-caps text-primary-container mb-stack-sm block">POR QUE NOS ESCOLHER</span>
+<h2 class="font-display-lg text-headline-md md:text-headline-md mb-stack-md">A Essência da Nossa Flora</h2>
+<div class="space-y-stack-md mt-stack-lg">
+<div class="flex gap-stack-md p-stack-md bg-surface border border-outline-variant/10 rounded-lg hover:border-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[32px]" data-icon="eco">eco</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1">Ingredientes Selvagens</h3>
+<p class="text-on-surface-variant">Coletamos ervas e brotos de cultivo orgânico e extrativismo sustentável para garantir o máximo frescor.</p>
+</div>
+</div>
+<div class="flex gap-stack-md p-stack-md bg-surface border border-outline-variant/10 rounded-lg hover:border-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[32px]" data-icon="restaurant">restaurant</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1">Cura Gastronômica</h3>
+<p class="text-on-surface-variant">Cada prato é concebido como uma experiência de bem-estar, equilibrando propriedades medicinais e sabor refinado.</p>
+</div>
+</div>
+<div class="flex gap-stack-md p-stack-md bg-surface border border-outline-variant/10 rounded-lg hover:border-primary-container/30 transition-colors">
+<span class="material-symbols-outlined text-secondary text-[32px]" data-icon="star">star</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1">Momentos Únicos</h3>
+<p class="text-on-surface-variant">Ambiente intimista desenhado para celebrações que pedem discrição, elegância e exclusividade.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary-container/40 z-10"></div>
+<div class="aspect-[4/5] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="A portrait-oriented image of a sophisticated chef in a dark minimalist uniform, carefully inspecting a sprig of herb. The lighting is focused and artistic, with much of the frame in deep shadow. The mood is one of intense focus, craftsmanship, and dedication to the culinary arts. Deep brown and black tones with warm skin highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFB68S3EhtzCMAmznHwuGbJLWS5ckbh-iIAU8-oADRSe1z8Y4TjvvTtMQEp76jDoWkyVWYxQwDlnw7hWeDE9Io07keslQoorcYK7F7t9P1F2fSIG7SKwEa7vednCsHtbFo5o9BQQo0kSKB6sFD-RZgZl9vu4vavGCnoVUTVewwJXwIYRI3dKKdFTXFALNYiRxDJulsImWqcVUnUJU2eTJlvDAja-FxG1TPFSAMcOaHEEyNAp_lecAwbMRJu2DLsKON35NhHmO4iKIw"/>
+</div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary-container/40 z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlight -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto" id="menu">
+<div class="max-w-3xl mx-auto border border-outline-variant/20 p-8 md:p-16 relative bg-surface">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-headline-md mb-2">Seleção do Chef</h2>
+<p class="font-body-md text-on-surface-variant italic">Menu degustação sazonal</p>
+</div>
+<div class="space-y-8">
+<div>
+<h4 class="font-label-caps text-secondary mb-4">ENTRADAS</h4>
+<div class="space-y-4">
+<div class="flex items-end">
+<span class="font-headline-sm text-[20px]">Carpaccio de Beterraba e Poejo</span>
+<div class="line-leader"></div>
+<span class="font-body-lg font-bold">R$ 58</span>
+</div>
+<p class="text-on-surface-variant text-sm italic">Com queijo de cabra artesanal e azeite de ervas finas.</p>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-secondary mb-4">PRINCIPAIS</h4>
+<div class="space-y-4">
+<div class="flex items-end">
+<span class="font-headline-sm text-[20px]">Risoto de Cogumelos e Ora-pro-nóbis</span>
+<div class="line-leader"></div>
+<span class="font-body-lg font-bold">R$ 92</span>
+</div>
+<p class="text-on-surface-variant text-sm italic">Arroz arbóreo mantecado com manteiga de garrafa e ervas frescas.</p>
+<div class="flex items-end mt-4">
+<span class="font-headline-sm text-[20px]">Cordeiro com Crosta de Ervas do Mato</span>
+<div class="line-leader"></div>
+<span class="font-body-lg font-bold">R$ 145</span>
+</div>
+<p class="text-on-surface-variant text-sm italic">Acompanha purê de mandioquinha defumado.</p>
+</div>
+</div>
+<div>
+<h4 class="font-label-caps text-secondary mb-4">SOBREMESAS</h4>
+<div class="space-y-4">
+<div class="flex items-end">
+<span class="font-headline-sm text-[20px]">Mousse de Chocolate e Alecrim</span>
+<div class="line-leader"></div>
+<span class="font-body-lg font-bold">R$ 42</span>
+</div>
+<p class="text-on-surface-variant text-sm italic">Chocolate 70% cacau com toque de sal de alecrim.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-block bg-primary-container text-on-primary-container px-10 py-4 rounded-full font-button-text hover:bg-secondary-container transition-all" href="https://wa.me/552127716109">
+                        PEDIR VIA WHATSAPP
+                    </a>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto bg-surface-container-low/50 rounded-xl">
+<h2 class="font-display-lg text-headline-md text-center mb-stack-lg">Dúvidas Frequentes</h2>
+<div class="max-w-2xl mx-auto space-y-6">
+<div class="border-b border-outline-variant/20 pb-4">
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">Vocês trabalham com reservas?</h3>
+<p class="text-on-surface-variant">Sim, operamos exclusivamente sob reserva para garantir a qualidade dos ingredientes frescos colhidos no dia. O contato é feito via WhatsApp.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-4">
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">O menu possui opções veganas?</h3>
+<p class="text-on-surface-variant">Sim, nossa filosofia "Ervas do Mato" prioriza elementos vegetais. Temos um menu degustação 100% plant-based disponível sob consulta.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-4">
+<h3 class="font-headline-sm text-headline-sm mb-2 text-primary">Qual o horário de atendimento?</h3>
+<p class="text-on-surface-variant">Atendemos para jantar de Quinta a Sábado, das 19h às 23h. Domingos para almoço das 12h às 16h.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-on-background/10 w-full py-stack-lg mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-start gap-stack-md px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="max-w-xs">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary-container" data-icon="spa">spa</span>
+<span class="font-display-lg text-headline-md text-on-surface">Flora</span>
+</div>
+<p class="text-on-surface-variant text-sm">Gastronomia autoral que celebra a biodiversidade e o luxo do herbalismo brasileiro.</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h4 class="font-label-caps text-secondary mb-4">CONTATO</h4>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li>(21) 2771-6109</li>
+<li>contato@florahervas.com.br</li>
+<li>Rio de Janeiro, RJ</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-secondary mb-4">LINKS</h4>
+<ul class="space-y-2 text-on-surface-variant text-sm">
+<li><a class="hover:text-primary-container transition-colors" href="#">Cardápio</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#">Sobre</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#">Localização</a></li>
+<li><a class="hover:text-primary-container transition-colors" href="#">Privacidade</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter mt-stack-lg pt-stack-md border-t border-on-background/5 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant/60">
+                © 2024 Flora Hervas do Mato. Editorial Minimalism em Gastronomia.
+            </p>
+</div>
+</footer>
+<!-- Persistent Bottom NavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-full bg-surface-container-high shadow-lg border-t border-outline-variant/10">
+<div class="flex justify-around items-center h-20 px-4 pb-2">
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-6 py-2 active:scale-95 transition-transform" href="#menu">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-label-caps text-[10px] mt-1">CARDÁPIO</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-8 py-2 active:scale-95 transition-transform" href="https://wa.me/552127716109">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="font-label-caps text-[10px] mt-1 uppercase">WHATSAPP</span>
+</a>
+</div>
+</nav>
+<!-- Floating Action Button (Desktop Only) -->
+<div class="hidden md:block fixed bottom-8 right-8 z-50">
+<a class="flex items-center gap-3 bg-primary-container text-on-primary-container px-6 py-4 rounded-full shadow-2xl hover:bg-secondary-container transition-all hover:scale-105 active:scale-95" href="https://wa.me/552127716109">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-button-text">FALAR COM SOMMELIER</span>
+</a>
+</div>
+<script>
+        // Micro-interactions and scroll effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky Header effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>
